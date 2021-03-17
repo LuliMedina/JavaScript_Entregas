@@ -1,6 +1,7 @@
-let añoDeNacimiento = Number(prompt("Ingresa el año de nacimiento"));
-
-for (let i = añoDeNacimiento; i <= 2021; i++) {
-	let edad = i - añoDeNacimiento;
-	console.log(`en ${i} tenía ${edad}`);
+function calcularprecio(precio) {
+	var precio = Number(prompt("Ingresa el precio"));
+	return precio * 0.21 + precio;
 }
+
+let precioIVA = calcularprecio();
+alert(`El precio con IVA es $${precioIVA}`);
