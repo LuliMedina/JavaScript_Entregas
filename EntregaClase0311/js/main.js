@@ -1,10 +1,10 @@
-function coniva(precio) {
-	var precio = Number(prompt("Ingresa el precio"));
+function coniva() {
+	let precio = Number(prompt("Ingresa el precio"));
 	return precio * 0.21 + precio;
 }
 
-function descuento(descuento) {
-	var descuento = prompt("¿Tenes un descuento?");
+function descuento() {
+	let descuento = prompt("¿Tenes un descuento?");
 	switch (descuento) {
 		case "si":
 			return 100;
@@ -17,8 +17,8 @@ function descuento(descuento) {
 	}
 }
 
-function conenvio(envio) {
-	var envio = prompt("¿Vivís en Capital Federal o GBA?");
+function conenvio() {
+	let envio = prompt("¿Vivís en Capital Federal o GBA?");
 	switch (envio) {
 		case "si":
 			return 200;
